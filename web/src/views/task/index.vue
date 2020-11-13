@@ -1222,6 +1222,7 @@ console.log("run nodejs")`,
       this.saveapi.header["Content-Type"] = this.content_type;
     },
     codeinitEditor: function(editor) {
+      editor.session.setNewLineMode("unix");
       editor.setAutoScrollEditorIntoView(true);
       editor.setShowPrintMargin(false);
       editor.on("dblclick", function() {
